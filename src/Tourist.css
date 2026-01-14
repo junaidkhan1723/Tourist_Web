@@ -1,0 +1,98 @@
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    margin-right: 10px;
+}
+.headerbar{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.headerList{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.icon{
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+    background-color: black;
+}
+
+.moto-container{
+    background-color:rgb(182, 185, 176) ;
+    font-weight: bolder;
+}
+.moto{
+    font-weight: bold;
+}
+@keyframes animeside{
+    from{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.animeside{
+    animation: animeside 4s  linear;
+   
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+         scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.fadeIn{
+    animation: fadeIn  linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+@keyframes animeLeft{
+    from{
+        opacity: 0;
+        transform: translate(-100px) ;
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.slideLeft{
+    animation: animeLeft linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 30%;
+}
+
+@keyframes animeRight{
+    from{
+        opacity: 0;
+        transform: translate(120px) ;
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.slideRight{
+    animation: animeRight linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 30%;
+}
+
+
+.placeHeading{
+    font-size: 2em;
+    margin-top: 1em;
+}
